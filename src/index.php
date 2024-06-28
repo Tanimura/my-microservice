@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "myuser";
 $password = "mypassword";
 $dbname = "mydatabase";
-$port = 3307;
+$port = 3306;
 
 try {
     // Criar conexão PDO com a porta especificada
