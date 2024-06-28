@@ -1,6 +1,6 @@
 <?php
-echo "Olá, mundo!";
-$servername = "mysql";
+echo "Olá, mundo! <br>";
+$servername = "localhost";
 $username = "myuser";
 $password = "mypassword";
 $dbname = "mydatabase";
@@ -11,8 +11,8 @@ try {
     $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
     // Configurar o modo de erro do PDO para exceção
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    echo "Conectado com successo";
 } catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    echo "Erro ao conectar no banco: " . $e->getMessage();
 }
 ?>
