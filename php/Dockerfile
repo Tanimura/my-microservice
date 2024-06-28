@@ -1,7 +1,7 @@
 FROM php:7.4-fpm
 
 # Instalar extensões necessárias
-RUN docker-php-ext-install pdo pdo_mysql
+RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # Configurar o diretório de trabalho
 WORKDIR /var/www/html
